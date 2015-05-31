@@ -22,11 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="101Champagnes" />
+        <module name="champagnes-backend" />
+        <module name="champagnes-frontend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="101Champagnes" target="1.5" />
+      <module name="champagnes-backend" target="1.5" />
+      <module name="champagnes-frontend" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+          http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+
+	<persistence-unit name="MatchitJpa" transaction-type="RESOURCE_LOCAL">
+		<class>be.fedasil.matchit.backend.model.Place</class>
+		<class>be.fedasil.matchit.backend.model.Room</class>
+		<class>be.fedasil.matchit.backend.model.Location</class>
+		<class>be.fedasil.matchit.backend.model.ReceptionCenter</class>
+		<class>be.fedasil.matchit.backend.model.Address</class>
+		<class>be.fedasil.matchit.backend.model.Contact</class>
+		<class>be.fedasil.matchit.backend.model.ConfigurationItem</class>
+		<class>be.fedasil.matchit.backend.model.PropertyMetadata</class>
+
+		<properties>
+			<!--property name="hibernate.connection.provider_class" value="org.hibernate.connection.DriverManagerConnectionProvider" 
+				/ -->
+			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/MatchItDatabase" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.connection.username" value="matchit1" />
+			<property name="hibernate.connection.password" value="admin123" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+
+		</properties>
+	</persistence-unit>
+	
+</persistence>
+
+
+
+
+
+

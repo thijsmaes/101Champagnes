@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="champagnes-backend:ejb">
+    <output-path>$PROJECT_DIR$/champagnes-backend/target</output-path>
+    <root id="archive" name="champagnes-backend-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="champagnes-backend:ejb exploded" />
+    </root>
+  </artifact>
+</component>

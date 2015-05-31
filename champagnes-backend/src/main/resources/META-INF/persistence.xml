@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/persistence">
+
+	<persistence-unit transaction-type="JTA" name="MatchitJpa">
+
+		<jta-data-source>java:/jdbc/MatchItDatasource_XA</jta-data-source>
+
+		<class>be.fedasil.matchit.backend.model.Place</class>
+		<class>be.fedasil.matchit.backend.model.Room</class>
+		<class>be.fedasil.matchit.backend.model.ReceptionCenter</class>
+		<class>be.fedasil.matchit.backend.model.Address</class>
+		<class>be.fedasil.matchit.backend.model.Location</class>
+		<class>be.fedasil.matchit.backend.model.Contact</class>
+		<class>be.fedasil.matchit.backend.model.ConfigurationItem</class>
+		<class>be.fedasil.matchit.backend.model.PropertyMetadata</class>
+
+		<properties>
+			<property name="hibernate.transaction.jta.platform"
+				value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+			<!--<property name="hibernate.hbm2ddl.auto" value="create"/> -->
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
